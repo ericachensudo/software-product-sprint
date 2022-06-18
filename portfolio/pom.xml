@@ -40,7 +40,7 @@
     </dependency>
   </dependencies>
 
-    <!-- Maven Dependency -->
+    <!-- new Maven Dependency -->
     <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-language</artifactId>
