@@ -38,14 +38,21 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-  </dependencies>
 
-    <!-- new Maven Dependency -->
+    <!-- new Maven Dependency (sentiment analysis)-->
     <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-language</artifactId>
         <version>1.55.0</version>
     </dependency>
+
+    <!-- new Maven Dependency (vision analysis)-->
+    <dependency>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-vision</artifactId>
+    <version>1.100.0</version>
+    </dependency>
+ </dependencies> 
 
   <build>
     <plugins>
