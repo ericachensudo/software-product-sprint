@@ -1,5 +1,5 @@
 runtime: java11
 
-# includes: /path/to/your/env_variables.yaml
+includes: /path/to/your/env_variables.yaml
 
-# export \GOOGLE_MAPS_API_KEY="AIzaSyB7LR-9DBB4MgRt_ObXVyFThwnfW6nU8Gw"
+export \GOOGLE_MAPS_API_KEY="AIzaSyB7LR-9DBB4MgRt_ObXVyFThwnfW6nU8Gw"

@@ -1,10 +1,10 @@
 package com.google.sps.servlets;
 
-// import com.google.cloud.storage.Blob;
-// import com.google.cloud.storage.BlobId;
-// import com.google.cloud.storage.BlobInfo;
-// import com.google.cloud.storage.Storage;
-// import com.google.cloud.storage.StorageOptions;
+import com.google.cloud.storage.Blob;
+import com.google.cloud.storage.BlobId;
+import com.google.cloud.storage.BlobInfo;
+import com.google.cloud.storage.Storage;
+import com.google.cloud.storage.StorageOptions;
 import com.google.cloud.vision.v1.AnnotateImageRequest;
 import com.google.cloud.vision.v1.AnnotateImageResponse;
 import com.google.cloud.vision.v1.BatchAnnotateImagesResponse;
@@ -13,9 +13,6 @@ import com.google.cloud.vision.v1.Feature;
 import com.google.cloud.vision.v1.Image;
 import com.google.cloud.vision.v1.ImageAnnotatorClient;
 import com.google.protobuf.ByteString;
-
-import io.grpc.Context.Storage;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
