@@ -33,12 +33,13 @@
       <artifactId>jetty-server</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+    
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-  </dependencies>
+  
 
     <!-- new Maven Dependency -->
     <dependency>
@@ -46,6 +47,8 @@
         <artifactId>google-cloud-language</artifactId>
         <version>1.55.0</version>
     </dependency>
+
+    </dependencies>
 
   <build>
     <plugins>
