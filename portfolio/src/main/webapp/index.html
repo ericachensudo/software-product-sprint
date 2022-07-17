@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  
+  <body class="gradient-background">
     <div id="content">
-      <h1>My Portfolio</h1>
+      <h1>Erica Chen</h1>
       <p>This is my portfolio.</p>
+      <img src="/images/pfp.PNG" 
+      width="225" 
+      height="300"/>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+    
+      <form action="/form-handler" method="POST">
+        <p> Enter text: </p>
+        <textarea name="text-input"> hello world </textarea>
+        <br/>
+        <input type="submit" />
+      </form>
+
+      <form action='/sentiment' method="POST">
+        <p> Enter text to be analyzed: </p>
+        <textarea name="message"> good stuff </textarea>
+        <br/>
+        <button> Submit </button>
+      </form>
+
+      <!-- <form action="/image" method="POST" enctype="multipart/form-data">
+        <p> Upload an image: </p>
+        <input type="file" name="image">
+        <br/><br/>
+        <button>Submit</button>
+      </form> -->
+
     </div>
   </body>
 </html>

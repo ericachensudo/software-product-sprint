@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
+    <googleCloudProjectId>echen-sps-summer22</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -33,12 +33,22 @@
       <artifactId>jetty-server</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+    
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-  </dependencies>
+  
+
+    <!-- new Maven Dependency -->
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-language</artifactId>
+        <version>1.55.0</version>
+    </dependency>
+
+    </dependencies>
 
   <build>
     <plugins>

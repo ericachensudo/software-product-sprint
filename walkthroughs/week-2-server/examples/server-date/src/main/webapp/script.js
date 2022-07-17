@@ -3,6 +3,8 @@ async function showServerTime() {
   const responseFromServer = await fetch('/date');
   const textFromResponse = await responseFromServer.text();
 
+  <p> textFromResponse </p>
+
   const dateContainer = document.getElementById('date-container');
   dateContainer.innerText = textFromResponse;
 }
