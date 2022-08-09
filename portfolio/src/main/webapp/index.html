@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+  </head>
+  <body>
+    <h1>Sentiment Analysis</h1>
+    <p>Type a message and click submit to analyze its sentiment:</p>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
+    <form method="POST" action="/sentiment">
+      <textarea name="message"></textarea>
+      <br/>
+      <button>Submit</button>
+    </form>
 
-    <body class="gradient-background">
-        <ul id="navbar">
-            <li><a href="/index.html">Erica Chen</a></li>
-            <li><a href="/week0.html">Week0</a></li> <!-- profile pic -->
-            <li><a href="/week1.html">Week1</a></li> <!-- social links, pictures -->
-            <li><a href="/week2.html">Week2</a></li> <!-- logged messages, date, random message, json -->
-            <li><a href="/week3.html">Week3</a></li> <!-- sentiment analysis -->
-        </ul>
-
-        <div id="content">
-            <h1>Erica Chen</h1>
-            <p>Welcome to my Google Software Product Sprint portfolio.</p>
-            <img src="/images/pfp.PNG" width="225" height="300"/>
-        </div>
   </body>
 </html>
