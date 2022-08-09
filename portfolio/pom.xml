@@ -40,7 +40,7 @@
       <version>${jetty.version}</version>
     </dependency>
 
-    <!-- new Maven Dependency -->
+    <!-- sentimentanalysis -->
     <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-language</artifactId>
@@ -61,12 +61,12 @@
       <version>1.104.0</version>
     </dependency>
 
-    <!-- Jsoup -->
+    <!-- Jsoup
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.14.2</version>
-    </dependency>
+    </dependency> -->
 
     <!-- added bucket dependencies 
     <dependency>
