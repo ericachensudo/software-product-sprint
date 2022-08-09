@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  
-  <body class="gradient-background">
-    <div id="content">
-      <h1>Erica Chen</h1>
-      <p>Welcome to my Google Software Product Sprint portfolio.</p>
-      <img src="/images/pfp.PNG" 
-      width="225" 
-      height="300"/>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    
-      <form action="/form-handler" method="POST">
-        <p> Enter text: </p>
-        <textarea name="text-input"> hello world </textarea>
-        <br/>
-        <input type="submit" />
-      </form>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
 
-      <form action='/sentiment' method="POST">
-        <p> Enter text to be analyzed: </p>
-        <textarea name="message"> good stuff </textarea>
-        <br/>
-        <button> Submit </button>
-      </form>
+    <body class="gradient-background">
+        <ul id="navbar">
+            <li><a href="/index.html">Erica Chen</a></li>
+            <li><a href="/week0.html">Week0</a></li> <!-- profile pic -->
+            <li><a href="/week1.html">Week1</a></li> <!-- social links, pictures -->
+            <li><a href="/week2.html">Week2</a></li> <!-- logged messages, date, random message, json -->
+            <li><a href="/week3.html">Week3</a></li> <!-- sentiment analysis -->
+        </ul>
 
-      <!-- <form action="/image" method="POST" enctype="multipart/form-data">
-        <p> Upload an image: </p>
-        <input type="file" name="image">
-        <br/><br/>
-        <button>Submit</button>
-      </form> -->
-
-    </div>
+        <div id="content">
+            <h1>Erica Chen</h1>
+            <p>Welcome to my Google Software Product Sprint portfolio.</p>
+            <img src="/images/pfp.PNG" width="225" height="300"/>
+        </div>
   </body>
 </html>

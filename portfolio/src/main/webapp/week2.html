@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+  <body onload="loadMessages()" class="gradient-background">
+
+    <ul id="navbar">
+        <li><a href="/index.html">Erica Chen</a></li>
+        <li><a href="/week0.html">Week0</a></li>
+        <li><a href="/week1.html">Week1</a></li>
+        <li><a href="/week2.html">Week2</a></li>
+        <li><a href="/week3.html">Week3</a></li>
+    </ul>
+    
+    <div id="content">
+        <h1> Make a wish! </h1>
+        <form action="/forms" method="POST">
+            <p class="fonts"> Send a message here: </p>
+            <textarea name="text-input" class="fonts" placeholder="Your message"></textarea>
+            <br/>
+            <input name="title" type="submit" value="Send!" class="fonts" />
+        </form>
+    </div>
+    <hr/>
+    <ul class="fonts" id="week2"></ul>    
+  </body>
+</html>
