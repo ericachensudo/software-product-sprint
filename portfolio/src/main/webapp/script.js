@@ -21,7 +21,7 @@ async function addRandomPhotos() {
         imageContainer.removeChild(imageContainer.firstChild);
     }
 
-    const food = Math.floor(Math.random() * 4);
+    const food = Math.floor(Math.random() * 3);
 
     // set image source based on message
     let imgSrc;
