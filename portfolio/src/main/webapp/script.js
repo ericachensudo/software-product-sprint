@@ -1,17 +1,3 @@
-// Copyright 2020 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 // adds photos to the page.
 async function addRandomPhotos() {
     const imageContainer = document.getElementById("image-container");
@@ -21,19 +7,23 @@ async function addRandomPhotos() {
         imageContainer.removeChild(imageContainer.firstChild);
     }
 
-    const food = Math.floor(Math.random() * 3);
+    const food_array = ['hamburger', 'hotpot', 'kdog', 'steak']
+    const food = Math.floor(Math.random() * food_array.length);
 
     // set image source based on message
     let imgSrc;
     switch (food) {
-      case 1:
+      case 0:
         imgSrc = "/images/hamburger.jpeg";
         break;
-      case 2:
+      case 1:
         imgSrc = "/images/hotpot.jpeg";
         break;
-      case 3:
+      case 2:
         imgSrc = "/images/kdog.jpeg";
+        break;
+      case 3:
+        imgSrc = "/images/steak.jpeg";
         break;
     }
 
@@ -64,7 +54,6 @@ async function showServerTime() {
     const dateContainer = document.getElementById('date-container');
     dateContainer.innerText = textFromResponse;
 }
-
 
 //Adds JSON data to the page inside jsonContainer
 async function fetchJSON() {
