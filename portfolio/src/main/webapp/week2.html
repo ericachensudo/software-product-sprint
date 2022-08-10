@@ -9,25 +9,24 @@
 
   <body onload="loadMessages()" class="gradient-background">
 
-    <ul id="navbar">
-        <li><a href="/index.html">Erica Chen</a></li>
-        <li><a href="/week0.html">Week0</a></li>
-        <li><a href="/week1.html">Week1</a></li>
-        <li><a href="/week2.html">Week2</a></li>
-        <li><a href="/week3.html">Week3</a></li>
-    </ul>
-    
+    <div class="navbar">
+        <a href="/index.html">Erica Chen</a>
+        <a href="/week0.html">Week 0</a>
+        <a href="/week1.html">Week 1</a>
+        <a href="/week2.html">Week 2</a>
+        <a href="/week3.html">Week 3</a>
+    </div>
+
     <div id="content">
-        <p> Warning: page is currently under construction </p>
-        <h1> Make a wish! </h1>
-        <form action="/forms" method="POST">
-            <p class="fonts"> Send a message here: </p>
-            <textarea name="text-input" class="fonts" placeholder="Your message"></textarea>
+        <form action="/form-handler" method="POST">
+            <h1> Leave a message! </h1>
+            <p>Enter text here to appear later:</p>
+            <textarea name="text-input"> hello, world! </textarea>
             <br/>
-            <input name="title" type="submit" value="Send!" class="fonts" />
+            <input type="submit" />
         </form>
     </div>
+
     <hr/>
-    <ul class="fonts" id="week2"></ul>    
   </body>
 </html>
