@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
         <meta charset="UTF-8">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
-  <body class="gradient-background">
+
+  <body onload="loadMessages()" class="gradient-background">
 
     <div class="navbar">
         <a href="/index.html">Erica Chen</a>
@@ -16,11 +17,16 @@
         <a href="/week3.html">Week 3</a>
     </div>
 
-        <div id="content">
-            <h1>Erica Chen</h1>
-            <p>This is my portfolio.</p>
-            <img src="/images/pfp.PNG" width="225" height="300"/>
-        </div>
+    <div id="content">
+        <form action="/form-handler" method="POST">
+            <h1> Leave a message! </h1>
+            <p>Enter text here to appear later:</p>
+            <textarea name="text-input"> hello, world! </textarea>
+            <br/>
+            <input type="submit" />
+        </form>
+    </div>
+
     <hr/>
   </body>
 </html>

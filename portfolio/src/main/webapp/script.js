@@ -1,28 +1,56 @@
-// Copyright 2020 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// adds photos to the page.
+async function addRandomPhotos() {
+    const imageContainer = document.getElementById("image-container");
+    
+    // clear previous message & image (if any)
+    while (imageContainer.firstChild) {
+        imageContainer.removeChild(imageContainer.firstChild);
+    }
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+    const food_array = ['hamburger', 'hotpot', 'kdog', 'steak']
+    const food = Math.floor(Math.random() * food_array.length);
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // set image source based on message
+    let imgSrc;
+    switch (food) {
+      case 0:
+        imgSrc = "/images/hamburger.jpeg";
+        break;
+      case 1:
+        imgSrc = "/images/hotpot.jpeg";
+        break;
+      case 2:
+        imgSrc = "/images/kdog.jpeg";
+        break;
+      case 3:
+        imgSrc = "/images/steak.jpeg";
+        break;
+    }
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    // display corresponding image
+    let img = document.createElement("img");
+    img.src = imgSrc;
+    img.id = "random-img"
+    imageContainer.appendChild(img);
+}
+
+function addRandomFacts() {
+    const facts =
+    ['I taught myself how to do the splits during the pandemic locakdown', 'I am currently learning to play the ukulele', 'I can speak Spanish and Mandarin', 'I attend an all womens college'];
+
+    // Pick a random fact.
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+
+    // Add it to the page.
+    const factContainer = document.getElementById("fact-container");
+    factContainer.innerText = fact;
+}
+
+//Adds current server time to the page inside dateContainer
+async function showServerTime() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text();
+
+    const dateContainer = document.getElementById('date-container');
+    dateContainer.innerText = textFromResponse;
 }

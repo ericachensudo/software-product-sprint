@@ -29,4 +29,5 @@ function randomizeImage() {
   // Remove the previous image.
   imageContainer.innerHTML = '';
   imageContainer.appendChild(imgElement);
+  
 }
